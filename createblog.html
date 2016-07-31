@@ -8,6 +8,7 @@
   	<link href="css/bootstrap.min.css" rel="stylesheet">
   	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.google.com/?selection.family=Arima+Madurai">
+    <link rel="stylesheet" type="text/css" href="css/jquery.classyedit.css" />
     <style media="screen">
     @import 'https://fonts.googleapis.com/css?family=Aref+Ruqaa|Dancing+Script|Poiret+One|Raleway|Satisfy|Shadows+Into+Light';
       body {
@@ -52,11 +53,11 @@
       }
       .page-name {
         position: absolute;
-        top: 5%;
+        top: 0px;
         font-weight: bold;
         width: auto;
         border-left: 5px solid #02c1d6;
-        padding-left: 5px;
+        padding-left: 35px;
         color: #02c1d6;
       }
       .form-content {
@@ -69,8 +70,9 @@
       }
       .input-set {
         position: relative;
-        width: 90%;
+        //width: 100%;
         margin-bottom: 50px;
+        //margin-left: 5px;
       }
       .input-set input {
         height: 50px;
@@ -79,6 +81,17 @@
         border: 0px;
         border-bottom: 1px solid black;
         transition: all .35s ease-in;
+      }
+      .input-set .classy-editor {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: -15px;
+        top: 0px;
+        font-size: 1.2em;
+      }
+      .classy-editor {
+        background: orange;
       }
       .input-set label {
         opacity: .5;
@@ -122,14 +135,13 @@
         margin-bottom: 0px;
       }
     </style>
+
   </head>
   <body>
-    <div class="col-lg-2">
+    <div class="col-lg-1">
     </div>
-    <div class="col-lg-8 login-register">
-      <div class="col-lg-3">
-      </div>
-      <div class="col-lg-6">
+    <div class="col-lg-10 login-register">
+      <div class="col-lg-12">
         <div class="form-toggle">
           <span class="glyphicon glyphicon-pencil"></span>
         </div>
@@ -139,45 +151,23 @@
           </h1>
           <div class="form-content">
             <form  action="index.html" method="post">
-              <div class="input-set">
-                <input type="text" name="email" value="" required="">
-                <label for="email">Username</label>
+              <div class="col-lg-4">
+                <div class="input-set">
+                  <input type="text" name="title" value="" required="">
+                  <label for="title">Title</label>
+                </div>
+                <div class="input-set">
+                  <select name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
               </div>
-              <div class="input-set">
-                <input type="password" name="password" value="" required="">
-                <label for="password">Password</label>
+              <div class="col-lg-8 input-set">
+                <textarea class="classy-editor" name="name" rows="8" cols="40" spellcheck="true" ></textarea>
               </div>
               <div class="input-submit">
                 <input type="submit" name="password" value="Go">
-              </div>
-              <!-- TODO: Add forgot password link -->
-            </form>
-          </div>
-        </div>
-        <div class="sign-up">
-          <h1 class="page-name">
-            <span>Sign Up</span>
-          </h1>
-          <div class="form-content">
-            <form  action="index.html" method="post">
-              <div class="input-set">
-                <input type="email" name="email" value="" required=""/>
-                <label for="email">Email</label>
-              </div>
-              <div class="input-set">
-                <input type="password" name="password" value="" required=""/>
-                <label for="password">Password</label>
-              </div>
-              <div class="input-set">
-                <select name="gender">
-                  <option>Male</option>
-                  <option>Female</option>
-                </select>
-                <br>
-                <span>By clicking S-Up i accept to T &amp C</span>
-              </div>
-              <div class="input-submit">
-                <input type="submit" name="password" value="S-UP!">
               </div>
               <!-- TODO: Add forgot password link -->
             </form>
@@ -191,6 +181,12 @@
     <script src="js/jquery-3.0.0.min.js"></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.classyedit.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".classy-editor").ClassyEdit();
+        });
+    </script>
     <script type="text/javascript">
     var count = 0;
     $(".form-toggle").click(function () {

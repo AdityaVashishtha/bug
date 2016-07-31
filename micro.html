@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link href="css/style_2.css" rel="stylesheet">
 	<link href="css/microPost.css" rel="stylesheet">
-	<link href="css/menu-layout.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main-menu-style.css" charset="utf-8">
 </head>
 <body>
@@ -43,18 +42,6 @@
 			</ul>
 		</div>
 	</div>
-
-<div class="menu-side col-lg-1 col-sm-1">
-	<div class="menu-side-toggle"></div>
-	<ul>
-		<li><p class="iconic">Text</p></li>
-		<li><p class="iconic iconic1">Text</p></li>
-		<li><p class="iconic iconic2">Text</p></li>
-		<li><p class="iconic iconic3">Text</p></li>
-		<li><p class="iconic iconic4">Text</p></li>
-		<!--<li><span class="iconic"></span></li> -->
-	</ul>
-</div>
 <div  class="container-fluid col-lg-11 col-sm-11">
 	<div id="masonry" class="post-box col-lg-12 col-sm-12">
 		<div class="post">
@@ -72,7 +59,7 @@
 				</div>
 			</div>
 			<div class="post-partition-type">
-				<img class="postposter" src="https://fs01.androidpit.info/a/dd/50/numix-hexagon-icon-pack-dd50e4-w192.png" alt="" />
+				<img class="postposter" src="http://www.myiconfinder.com/uploads/iconsets/256-256-53d5151ca4f467ed9951f85024881c85.png" alt="" />
 			</div>
 			<div class="post-content">
 				<p>
@@ -94,7 +81,7 @@
 			</div>
 			<div class="post-bottom">
 					<div class="post-bottom-comment">
-							Views 10,245 
+							Views 10,245
 					</div>
 
 			</div>
@@ -115,7 +102,7 @@
 		</div>
 	</div>
 	<div class="post-partition-type">
-		<img class="postposter" src="https://fs01.androidpit.info/a/dd/50/numix-hexagon-icon-pack-dd50e4-w192.png" alt="" />
+		<img class="postposter" src="http://www.myiconfinder.com/uploads/iconsets/256-256-53d5151ca4f467ed9951f85024881c85.png" alt="" />
 	</div>
 	<div class="post-content">
 		<p>
@@ -145,7 +132,11 @@
 	</div>
 </div>
 
-
+<div class="add-post-button">
+	<a href="heel.h"><div class="image"></div></a>
+	<a href="heel.h"><div class="text"></div></a>
+	<a href="heel.h"><div class="video"></div></a>
+</div>
 <div class="scroll-up-button">
 </div>
 	<script src="js/jquery-3.0.0.min.js"></script>
@@ -167,6 +158,12 @@
 		$(".scroll-up-button-on").addClass("scroll-up-button-off");
 		$("html, body").animate({ scrollTop: 0 }, "slow");
   	return false;
+	});
+	var count=0;
+	$(".add-post-button").click(function () {
+		$(this).find(".text").toggleClass("add-post-text");
+		$(this).find(".image").toggleClass("add-post-image");
+		$(this).find(".video").toggleClass("add-post-video");
 	});
 	</script>
 </body>

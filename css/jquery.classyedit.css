@@ -13,11 +13,13 @@
     outline: none;
 }
 .classyedit {
-    border:1px #A9A9A9 solid;
+    border:0px #000 solid;
+    border-bottom:3px solid #02c1d6;
+    border-top:2px solid #02c1d6;
     width: 100%;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
-    border-radius: 3px;
+    border-radius:0px;
 }
 .classyedit .toolbar {
     position:relative;

@@ -16,39 +16,6 @@ body {
   right: 5%;
 
 }
- .add-post-image{
-  background: url("http://www.iconarchive.com/download/i83637/pelfusion/long-shadow-media/Camera-2.ico");
-  background-size: contain;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: -70px;
-  left: 5px;
-  z-index: 120;
-  animation: move-button .35s ease 1;
-}
- .add-post-text{
-  background: url("https://drivingsalesdata.com/assets/landing/img/steps/icon_pencil_white.png");
-  background-size: contain;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: -150px;
-  left: 5px;
-  z-index: 120;
-  animation: move-button .35s ease-in 1;
-}
- .add-post-video{
-  background: url("https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-256.png");
-  background-size: contain;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: -220px;
-  left: 5px;
-  z-index: 120;
-  animation: move-button .35s ease 1;
-}
 @keyframes move-button {
   0%{
     opacity: 0;

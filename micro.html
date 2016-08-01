@@ -81,7 +81,7 @@
 			</div>
 			<div class="post-bottom">
 					<div class="post-bottom-comment">
-							Views 10,245
+							10,245
 					</div>
 
 			</div>
@@ -131,12 +131,7 @@
 <!-- TODO: Sample post to delete -->
 	</div>
 </div>
-
-<div class="add-post-button">
-	<a href="heel.h"><div class="image"></div></a>
-	<a href="heel.h"><div class="text"></div></a>
-	<a href="heel.h"><div class="video"></div></a>
-</div>
+<a href="createblog.html"><div class="add-post-button"></div></a>
 <div class="scroll-up-button">
 </div>
 	<script src="js/jquery-3.0.0.min.js"></script>
@@ -158,12 +153,6 @@
 		$(".scroll-up-button-on").addClass("scroll-up-button-off");
 		$("html, body").animate({ scrollTop: 0 }, "slow");
   	return false;
-	});
-	var count=0;
-	$(".add-post-button").click(function () {
-		$(this).find(".text").toggleClass("add-post-text");
-		$(this).find(".image").toggleClass("add-post-image");
-		$(this).find(".video").toggleClass("add-post-video");
 	});
 	</script>
 </body>

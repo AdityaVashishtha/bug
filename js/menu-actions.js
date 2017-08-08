@@ -1,5 +1,5 @@
-var  gl = 1;
 $(document).ready(function () {
+  var  gl = 1;
   $(".menu-open-tag").click(function () {
     if( gl == 1) {
         //$(".main-menu").attr("style","display: block;");
@@ -9,7 +9,7 @@ $(document).ready(function () {
     else if(gl == 0) {
         //$(".main-menu").attr("style","display: none;");
         //$(".main-menu").animate({opacity: "0",transformX: '-400px'},"slow");
-        $(".main-menu").slideUp();
+        $(".main-menu").fadeOut();
         gl = 1;
         //$(".menu-text").hide();
         //$(".item").attr("style","width: auto;");
@@ -35,7 +35,7 @@ $(document).ready(function () {
         return ;
       }
       //code to close menu here this will only execute when click event occur on body apart from  menu
-      $(".main-menu").slideUp();
+      $(".main-menu").hide();
       gl = 1;
       //$(".menu-text").hide();
       //$(".item").attr("style","width: auto;");

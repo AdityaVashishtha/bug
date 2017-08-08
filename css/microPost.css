@@ -6,9 +6,9 @@
 .post {
   background: #fff;
   box-shadow: 0px 0px 5px 2px rgba(00, 00, 00, 0.1);
-  width: 25%;
-  margin-bottom: 25px;
-  margin-left: 5%;
+  width: 23%;
+  margin-bottom: 1%;
+  margin-left: 1%;
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -36,36 +36,6 @@ a:active ,a:focus, a:visited{
   height: 45px;
   border: 1px solid #fff;
 }
-.post-readmore .readmore {
-  position: relative;
-  background: #02c1d6;
-  border-radius: 0 4px 4px 0;
-  border-right: 8px solid rgba(0, 0, 0, 0.15);
-  color: #f2f2f2;
-  float: right;
-  font-family: Arial,sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
-  padding: 10px 35px 10px 45px;
-  margin-right: -10px;
-}
-.post-readmore .readmorebefore {
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-  content: '';
-  width: 0px;
-  height: 0px;
-  border-bottom: 45px solid transparent;
-  border-left: 45px solid white;
-}
-.post-readmore .readmore:hover {
-  opacity: .8;
-  margin-right:  -14px;
-}
 .post-readmore .social-sharing {
   position: absolute;
   font-size: 1.3em;
@@ -82,31 +52,16 @@ a:active ,a:focus, a:visited{
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
-
-.post .post-partition-type {
-  position: relative;
-  width: 100%;
-  border: 1px solid #02c1d6;
-}
-.post-partition-type img {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  top: -50%;
-  left: 100%;
-  transform: translateX(-50%) translateY(-50%);
-}
 .post-bottom .post-bottom-comment {
   position: relative;
   font-size: .85em;
   font-weight: bold;
-  float: left;
-  width: 48%;
+  width: 100%;
   padding: 2px;
   padding-left: 8px;
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.5);
+  text-align: left;
 }
 .post-img {
   position: relative;
@@ -115,21 +70,23 @@ a:active ,a:focus, a:visited{
   width: 100%;
 }
 .post-img .post-date {
+  font-weight: bold;
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 7%;
   width: 75px;
   height: 80px;
-  background: rgba(150, 150, 150, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 0px;
   margin: 0px;
   padding-top: 8px;
   padding-bottom: 8px;
-  color: rgb(155, 155, 155);;
+  color: rgba(255, 255, 255, 1);
   font-size: 1em;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: none;
+  z-index: 5;
 }
 .post-img:hover .post-date {
   display: block;
@@ -149,7 +106,7 @@ a:active ,a:focus, a:visited{
 
 .post-img:hover .post-date .post-year {
   font-size: 1.3em;
-  border-bottom: 2px solid rgb(155, 155, 155);;
+  border-bottom: 2px solid rgb(255, 255, 255);;
   padding-bottom: 5px;
 }
 .post-img:hover .post-date .post-day {
@@ -157,9 +114,6 @@ a:active ,a:focus, a:visited{
   font-size: .8em;
   border-top: 10px solid transparent;
 }
-
-
-
 .post-poster {
   font-style: italic;
   color: white;
@@ -184,9 +138,8 @@ a:active ,a:focus, a:visited{
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .post {
-    width: 40%;
-    margin-bottom: 25px;
-    margin-left: 7.50%;
+    width: 30%;
+    margin-bottom: 2%;
   }
   .post-img:hover .post-date {
     width: 75px;
@@ -195,9 +148,8 @@ a:active ,a:focus, a:visited{
 
 @media screen and (max-width: 768px) {
   .post {
-    width: 90%;
-    margin-bottom: 25px;
-    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 2%;
   }
   .post-img:hover .post-date {
     width: 70px;
@@ -206,8 +158,8 @@ a:active ,a:focus, a:visited{
 
 @media screen and (max-width: 768px) and (min-width: 650px) {
   .post {
-    width: 40%;
-    margin-bottom: 25px;
-    margin-left: 7.50%;
+    width: 46%;
+    margin-bottom: 2%;
+    /*margin-left: 7.50%;*/
   }
 }

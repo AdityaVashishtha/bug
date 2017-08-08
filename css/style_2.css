@@ -12,13 +12,21 @@ body {
   width: 70px;
   height: 70px;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
-
+  bottom: 25px;
+  right: 30px;
+  z-index: 1000;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 @keyframes move-button {
   0%{
     opacity: 0;
     top:0px;
   }
+}
+.search {
+  width: 200px;
+  height: 35px;
+  border: 0px;
+  border-bottom: 2px solid #ddd;
 }
